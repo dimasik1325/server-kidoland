@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kidloand - Дружелюбный Minecraft сервер</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #1a2a6c, #b21f1f, #fdbb2d);
+            background-size: 400% 400%;
+            animation: gradient 15s ease infinite;
+            color: #fff;
+            line-height: 1.6;
+        }
+        
+        @keyframes gradient {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            text-align: center;
+            padding: 40px 0;
+            background-color: rgba(0, 0, 0, 0.7);
+            border-radius: 10px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+        }
+        
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            color: #ffcc00;
+        }
+        
+        .subtitle {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+            color: #ffcc00;
+        }
+        
+        .server-info {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin-bottom: 30px;
+        }
+        
+        .info-card {
+            background-color: rgba(0, 0, 0, 0.7);
+            border-radius: 10px;
+            padding: 20px;
+            margin: 10px;
+            flex: 1;
+            min-width: 250px;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+            transition: transform 0.3s;
+        }
+        
+        .info-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .info-card h2 {
+            color: #ffcc00;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #ffcc00;
+            padding-bottom: 10px;
+        }
+        
+        .ip-address {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: #ffcc00;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 10px;
+            border-radius: 5px;
+            margin: 10px 0;
+            display: inline-block;
+        }
+        
+        .btn {
+            display: inline-block;
+            background-color: #ffcc00;
+            color: #000;
+            padding: 12px 25px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 10px 5px;
+            transition: all 0.3s;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+        
+        .btn:hover {
+            background-color: #ffd633;
+            transform: scale(1.05);
+        }
+        
+        .btn-download {
+            background-color: #4CAF50;
+            color: white;
+        }
+        
+        .btn-download:hover {
+            background-color: #45a049;
+        }
+        
+        .welcome-section {
+            background-color: rgba(0, 0, 0, 0.7);
+            border-radius: 10px;
+            padding: 30px;
+            margin-bottom: 30px;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+        }
+        
+        .welcome-section h2 {
+            color: #ffcc00;
+            margin-bottom: 20px;
+            font-size: 2rem;
+        }
+        
+        .welcome-section p {
+            font-size: 1.2rem;
+            margin-bottom: 15px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.7);
+            border-radius: 10px;
+            margin-top: 30px;
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.5rem;
+            }
+            
+            .subtitle {
+                font-size: 1.2rem;
+            }
+            
+            .info-card {
+                min-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Kidloand</h1>
+            <p class="subtitle">Дружелюбный Minecraft сервер</p>
+            <p>Версия: 1.21 - 1.21.10</p>
+        </header>
+        
+        <div class="server-info">
+            <div class="info-card">
+                <h2>IP Адрес сервера</h2>
+                <div class="ip-address">kidoland.joinserver.xyz</div>
+                <p>Присоединяйтесь к нашему сообществу!</p>
+            </div>
+            
+            <div class="info-card">
+                <h2>Версия Minecraft</h2>
+                <p>1.21 - 1.21.10</p>
+                <p>Совместимость с последними обновлениями</p>
+            </div>
+            
+            <div class="info-card">
+                <h2>Необходимый мод</h2>
+                <p>Simple Voice Chat</p>
+                <a href="https://modrinth.com/plugin/simple-voice-chat/version/fabric-1.21-2.5.17" class="btn btn-download" target="_blank">Скачать мод</a>
+            </div>
+        </div>
+        
+        <div class="welcome-section">
+            <h2>Добро пожаловать на наш сервер!</h2>
+            <p>Мы рады приветствовать вас на Kidloand! Наш сервер создан для дружелюбного и веселого времяпрепровождения.</p>
+            <p>Здесь вы найдете теплую атмосферу, отзывчивое сообщество и множество интересных активностей.</p>
+            <p>Все игроки на нашем сервере дружелюбные и всегда рады новым участникам!</p>
+            <p>Присоединяйтесь к нам и станьте частью нашего растущего сообщества!</p>
+            
+            <a href="#" class="btn">Присоединиться сейчас</a>
+        </div>
+        
+        <footer>
+            <p>© 2023 Kidloand Minecraft Server. Все права защищены.</p>
+        </footer>
+    </div>
+</body>
+</html>
